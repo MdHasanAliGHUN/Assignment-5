@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-full bg-white">
+        <!-- NAVBAR START FROM HERE -->
+         <nav class="bg-[#f9f7f3]">
+            <div class="flex justify-between w-11/12 mx-auto py-5 px-5">
+                <h1 id="home" class="text-2xl font-extrabold cursor-pointer">Home</h1>
+                <div class="gap-3 items-center justify-center hidden md:flex ">
+                    <img src="img/logo.png" alt="">
+                    <h1 class="font-bold text-2xl">Donate Bangladesh</h1>
+                </div>                
+                <div class="flex gap-2 items-center justify-center text-2xl">
+                    <img src="img/coin.png" alt="">
+                    <span id="mainBalance">50200</span>
+                    BDT
+                </div>
+            </div>
+         </nav>
+     </header>
+    <div class="w-11/12 mx-auto bg-slate-200 p-4">
+        <h1 class="text-2xl font-bold my-5">Important FAQ</h1>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is DOM</div>
+            <div class="collapse-content">
+            <p>The DOM (Document Object Model) is a programming interface for web documents, typically HTML or XML. It represents the structure of a document as a tree of objects, where each part of the document (elements, attributes, and text) is an object that can be accessed, manipulated, and modified using programming languages like JavaScript.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What do you mean by DOM?</div>
+            <div class="collapse-content">
+            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is the DOM structure of HTML?</div>
+            <div class="collapse-content">
+            <p>
+                Document Object Model - Wikipedia
+                A Document Object Model (DOM) tree is a hierarchical representation of an HTML or XML document. It consists of a root node, which is the document itself, and a series of child nodes that represent the elements, attributes, and text content of the document.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Why we should learn DOM</div>
+            <div class="collapse-content">
+            <br>1. Dynamic Content Manipulation
+                The DOM allows you to dynamically change the content of a webpage, such as updating text, adding or removing elements, and modifying styles, without reloading the page. This is key to building interactive web apps.<br>
+                2. Understanding Web Page Structure
+                The DOM provides a structured representation of HTML and XML documents. By learning the DOM, you understand how web pages are organized and how to navigate and manipulate them efficiently..</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("home").addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
+

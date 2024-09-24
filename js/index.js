@@ -86,3 +86,27 @@ document.getElementById("donateForQuotaMovementButton").addEventListener("click"
         clearInputField("donateForQuataMovementInputBox")
     }
 })
+
+
+document.getElementById("donatePoorManButton").addEventListener("click", () => {
+    let donateForPoorManInputBoxValue = getInputFieldValueUsingById("donateForPoorManInputBox")
+    let mainBalance = getTextFieldValueUsingById("mainBalance");
+    let donatedPoorManBlance = getTextFieldValueUsingById("donatedPoorManBlance")
+
+    if(validateInputField(donateForPoorManInputBoxValue, mainBalance)){
+        alert(`Do You Want To Donate ${donateForPoorManInputBoxValue} Taka`)
+        let poorManNewBlance = mainBalance - donateForPoorManInputBoxValue;
+        document.getElementById("mainBalance").innerText = poorManNewBlance;
+
+        let quotaMovementBlance = donatedPoorManBlance + donateForPoorManInputBoxValue;
+        document.getElementById("donatedForQuotaMovementBlance").innerText = quotaMovementBlance;
+
+        // Quota Movement title
+        let donatePoorManTitle = document.getElementById("donatePoorManTitle").innerText;
+
+        let historyCard = createHistoryCard(donateForPoorManInputBoxValue, donatePoorManTitle)
+        document.getElementById("historyContainer").appendChild(historyCard)
+
+        clearInputField("donateForPoorManInputBox")
+    }
+})

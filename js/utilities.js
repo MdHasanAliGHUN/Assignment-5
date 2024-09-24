@@ -22,14 +22,9 @@ const getInputFieldValueUsingById = (id) => {
  
  // THIS FUNCTION CREATED FOR CONDITIONALY SET BUTTON BACKGROUND COLOR
  const setButtonBgColor = (id) => {
-     const button = document.getElementById(id);
-     button.style.backgroundColor = "lightgreen"
- }
- // THIS FUNCTION CREATED FOR CONDITIONALY REMOVE BUTTON BACKGROUND COLOR
- const removeButtonBgColor = (id) => {
-     const button = document.getElementById(id);
-     button.style.backgroundColor = ""
- }
+    const button = document.getElementById(id);
+    button.style.backgroundColor = "#46ba1c"
+}
  // THIS FUNCTION CREATED FOR CREATE HISTORY CARD
  const createHistoryCard = (donateForFloodInputBoxValue, donateCardTitle) => {
      let div = document.createElement("div");

@@ -4,15 +4,13 @@ document.getElementById("blog").addEventListener("click", () => {
 
 document.getElementById("historyButton").addEventListener("click", () => {
     setButtonBgColor("historyButton")
-    removeButtonBgColor("homePageButton")
-
+    document.getElementById("homePageButton").style.backgroundColor = "#dbe0da"
     showHistoryUsingById("history")
 })
 
 document.getElementById("homePageButton").addEventListener("click", () => {
     setButtonBgColor("homePageButton")
-    removeButtonBgColor("historyButton")
-
+    document.getElementById("historyButton").style.backgroundColor = "#dbe0da"
     showHistoryUsingById("homePage")
 })
 
